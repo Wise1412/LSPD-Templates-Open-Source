@@ -80,6 +80,8 @@ namespace LSPD_Templates
             this.label16 = new System.Windows.Forms.Label();
             this.theorybox = new System.Windows.Forms.CheckBox();
             this.practicalbox = new System.Windows.Forms.CheckBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // trainername
@@ -597,6 +599,28 @@ namespace LSPD_Templates
             this.practicalbox.Text = "Practical";
             this.practicalbox.UseVisualStyleBackColor = true;
             // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.button10.Location = new System.Drawing.Point(12, 410);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 61);
+            this.button10.TabIndex = 3;
+            this.button10.Text = "Back to FTO Menu";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.button11.Location = new System.Drawing.Point(164, 410);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(130, 61);
+            this.button11.TabIndex = 3;
+            this.button11.Text = "Back to Main Menu";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -611,6 +635,8 @@ namespace LSPD_Templates
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.badmic);
             this.Controls.Add(this.badRP);
@@ -713,5 +739,7 @@ namespace LSPD_Templates
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.CheckBox theorybox;
         private System.Windows.Forms.CheckBox practicalbox;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }

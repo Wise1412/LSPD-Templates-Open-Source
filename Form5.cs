@@ -396,7 +396,7 @@ Personnel Profile: He will link it
 [IMG]https://www.asianbiketour.com/wp-content/uploads/2012/07/fade-line-div.png[/IMG][/FONT][/CENTER]
 [TABLE=""width: 500, align: center""]
 [TR]
-[TD][COLOR=#D3D3D3][B]Reason: [/B][/COLOR][COLOR=#e6e6fa]"+reasons.Text+@"[/COLOR][COLOR=#D3D3D3]
+[TD][COLOR=#D3D3D3][B]Reason: [/B][/COLOR][COLOR=#e6e6fa]" + reasons.Text + @"[/COLOR][COLOR=#D3D3D3]
 
 
 [/COLOR][/TD]
@@ -408,6 +408,18 @@ Personnel Profile: He will link it
 ";
             Clipboard.SetText(text.ToString());
             MessageBox.Show("Copied to Clipboard");
+        }
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 frm3 = new Form3();
+            frm3.Show();
+        }
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 frm1 = new Form1();
+            frm1.Show();
         }
     }
 }
